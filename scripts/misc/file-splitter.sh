@@ -1,10 +1,12 @@
 #!/bin/bash
+#
 # This command splits and compress (or uncompress) using gzip big files.
+#
 # It can crypt files symmetrically with gpg.
 # It can be interrupted, and it will check the last split or all of them.
+# It is AIX compilant.
 #
 # (c) Hector Rivas Gandara <keymon@gmail.com>
-#
 # 
 
 # Constants
