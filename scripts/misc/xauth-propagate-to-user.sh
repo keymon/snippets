@@ -14,7 +14,14 @@ DESTUSER=$1
 
 # Check $DISPLAY variable
 if [ ! "$DISPLAY" ]; then
-    echo "\$DISPLAY environment variable is not set."
+    cat <<EOF
+\$DISPLAY environment variable is not set.
+Possible causes:
+ * Client is not performing X11 forwarding.
+ * Client has not a X11 server configured.
+ * xauth command is not installed or failed: Location: $(which xauth 2>/dev/null || echo 'xauth not found in $PATH')
+ * \$HOME=$HOME is not writable and .XAuthority initialization failed.
+EOF
     exit 1
 fi
 

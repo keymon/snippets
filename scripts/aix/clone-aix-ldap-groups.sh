@@ -14,7 +14,7 @@ With this idea, this script will query a set of given groups from the AIX LDAP
 registry using the AIX command line tools (lsuser, lsgroup), and it will create
 them locally (mkgroup, mkuser).
 
-This scripts supports nested groups from Active Directory.
+This script supports nested groups from Active Directory.
 
 Known Bugs:
  - It updates the members of a group, but ** does not remove ** users not needed.
