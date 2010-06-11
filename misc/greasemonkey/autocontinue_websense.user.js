@@ -1,5 +1,6 @@
 // ==UserScript==
 // @name AutoContinue WebSense Block Page
+// @description This simple script will automacly submit the form in the WebSense warning block page. 
 // @namespace keymon
 // @include http://*:15871/*
 // ==/UserScript==
