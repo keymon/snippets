@@ -117,7 +117,7 @@ do_compress() {
             # If file exists, and we have to test or does not exists next file, check it.
             if [ -f "$DEST_FILE" ] && [ "$TEST" -o ! -f "$NEXT_DEST_FILE" ]; then
                 if [ ! "$ENCRIPT" ]; then
-                    check_compressed $DEST_FILE || rm -v $DEST_FILE
+                    check_compressed $DEST_FILE || rm $DEST_FILE
                 else
                     check_crypted_compressed $DEST_FILE $PASSWORD || rm -v $DEST_FILE
                 fi
